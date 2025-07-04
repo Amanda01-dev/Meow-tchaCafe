@@ -1,0 +1,51 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  background-image: url('coffee.jpg');
+}
+</style>
+  <meta charset="UTF-8">
+  <title>Meow-tcha Life</title>
+  <link rel="stylesheet" href="catcafe.css">
+  </head>
+<body>
+    <h1>Welcome to Meow-tcha Life!</h1>
+    <p>Enjoy our selection of seasonal-themed beverages and pastries, pet a cat and relax!</p>
+    <nl>
+      <li>Open daily from 8 AM to 8 PM</li>
+      <li>Free Wi-Fi available</li>
+      <li>Warm environment</li>
+  <div class="cat-container">
+    <div id="pixel-cat" style="position:absolute; left:50px; top:100px; width:48px; height:48px; z-index:10; cursor:pointer;">
+      <svg width="48" height="48" viewBox="0 0 48 48">
+        <rect x="8" y="16" width="32" height="24" fill="#21130e" stroke="#333" stroke-width="2"/>
+        <rect x="14" y="28" width="6" height="8" fill="#333"/>
+        <rect x="28" y="28" width="6" height="8" fill="#333"/>
+        <rect x="12" y="8" width="8" height="12" fill="#21130e" stroke="#333" stroke-width="2"/>
+        <rect x="28" y="8" width="8" height="12" fill="#21130e" stroke="#333" stroke-width="2"/>
+        <rect x="18" y="24" width="4" height="4" fill="#ffbf00"/>
+        <rect x="26" y="24" width="4" height="4" fill="#ffbf00"/>
+        <rect x="22" y="32" width="4" height="4" fill="#F99"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="menu-container">
+    <h2>This Month!</h2>
+    <ul id="menu-list"></ul>
+    <div class="dietary-note">
+
+    If you have any dietary restrictions or requirements please notify your barista.
+    In the meantime, pet a cat or two!
+  </div>
+  </div>
+  <script src="catcafe.js"></script>
+  </body>
+</html>
